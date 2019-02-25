@@ -1,0 +1,15 @@
+
+blog about "Introducing Container Builder for Cirrus CI"
+https://medium.com/cirruslabs/introducing-container-builder-for-cirrus-ci-80b9234f007
+
+Docker builder documentation:
+https://cirrus-ci.org/guide/docker-builder/
+
+blog about "C build environment in a docker container":
+https://ownyourbits.com/2017/06/20/c-build-environment-in-a-docker-container/ 
+
+https://cirrus-ci.org/examples/#c
+https://cirrus-ci.org/guide/writing-tasks/
+
+Real project example:
+https://github.com/GoogleChrome/puppeteer/blob/master/.cirrus.yml#L9
