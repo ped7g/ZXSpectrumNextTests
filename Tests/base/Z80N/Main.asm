@@ -17,8 +17,6 @@ MEM_SCRAP_BUFFER2   equ     MEM_SCRAP_BUFFER+1024   ; if using multiple buffers,
 
 INSTRUCTIONS_CNT    equ     23
 
-    call artificial_error_to_test_CI
-
 InstructionsData_L1Tests:
     dw      TestL1_AddBcW, TestL1_AddBcA
     dw      TestL1_AddDeW, TestL1_AddDeA
