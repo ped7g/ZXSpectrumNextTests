@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # Script to search for new snapshot files in test directories, and refresh the "release"
 # folder with them.
 shopt -s globstar nullglob
