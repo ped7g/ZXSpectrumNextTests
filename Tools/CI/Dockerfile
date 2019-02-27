@@ -8,15 +8,9 @@
 # base image is gcc:6
 FROM gcc:6
 
-# modified manually, when image rebuild is needed?
-# (I'm just guessing this will allow me to update the docker image when the git of
-# sjasmplus will contain new commits, which are worth of docker build, but this is
-# my first attempt to use docker, so I may be wrong about cache significance of LABEL)
-LABEL com.github.catpainblack.sjasmplus.version="1.10.3"
-
-# clone latest sources of sjasmplus sources (from the Z80N fork by CatpainBlack),
+# clone sources of sjasmplus (from my fork of the Z80N extension by CatpainBlack),
 # build sjasmplus and install it as part of this container
-RUN git clone https://github.com/CatpainBlack/sjasmplus.git \
+RUN git clone --depth=1 --branch v1.10.3 https://github.com/ped7g/sjasmplus.git \
     && cd sjasmplus \
     && make clean \
     && make \
