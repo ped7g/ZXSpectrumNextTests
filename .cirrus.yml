@@ -4,3 +4,4 @@ test_build_task:
     cpu: 1
     memory: 400M
   build_script: Tools/buildTests.sh
+  release_script: Tools/dorelease.sh
