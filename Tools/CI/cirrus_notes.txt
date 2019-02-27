@@ -20,8 +20,6 @@ file, in the project-root. The only task is to build all tests with that custom 
 container.
 
 TODO:
-* redirect sjasmplus repository to my own fork to have control about releases
-* verify there is simple way to trigger docker image build when sjasmplus sources change (it's cached)
 
 DONE:
 * Verify failure in build will show up in the commit on github
@@ -30,6 +28,10 @@ DONE:
   = 300M did work but git clone took 3s instead of 1s (may have been also temporary hickup),
   so I decided to go with 400M as current "final" setting (seems to work well)
 * Add verification of snapshot filenames (8.3 with .sna extension, no duplicity!)
+  = done
+* redirect sjasmplus repository to my own fork to have control about releases
+  = done, also only specific TAG is now cloned, to upgrade the assembler in controlled way
+* verify there is simple way to trigger docker image build when sjasmplus sources change (it's cached)
   = done
 
 ------------- initial resources --------------
